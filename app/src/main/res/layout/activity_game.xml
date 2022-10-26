@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintLayoutGame"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full_background"
+    tools:context=".GameActivity">
+
+    <ImageView
+        android:id="@+id/imageView_game_player"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bird" />
+
+    <TextView
+        android:id="@+id/textView_game_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="150dp"
+        android:text="@string/text_game_msg"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_game_coin"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/coin"
+        tools:layout_editor_absoluteX="627dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView_game_coin2"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/coin"
+        tools:layout_editor_absoluteX="627dp"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <ImageView
+        android:id="@+id/imageView_game_gray_bee"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/gray_bee"
+        tools:layout_editor_absoluteX="617dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <ImageView
+        android:id="@+id/imageView_game_green_bee"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/green_bee"
+        tools:layout_editor_absoluteX="617dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <ImageView
+        android:id="@+id/imageView_game_red_bee"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/red_bee"
+        tools:layout_editor_absoluteX="617dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coin" />
+
+    <TextView
+        android:id="@+id/textView_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:text="0/250"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_game_life"
+        style="?android:ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:numStars="3"
+        android:progressDrawable="@drawable/ic_custom_rating_bar"
+        android:rating="3"
+        android:stepSize="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

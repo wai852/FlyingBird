@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:srcCompat="@drawable/ic_baseline_volume_up" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView_player"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/bird"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/textView_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/text_game_player"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView_green_bee"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/green_bee"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/textView_green_bee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/text_game_e_1"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView_red_bee"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/red_bee"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/textView_red_bee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/text_game_e_2"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView_gray_bee"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:padding="10dp"
+                tools:ignore="VectorDrawableCompat"
+                app:srcCompat="@drawable/gray_bee" />
+
+            <TextView
+                android:id="@+id/textView_gray_bee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/text_game_e_3"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView_coin"
+                android:layout_width="65dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                tools:ignore="VectorDrawableCompat"
+                app:srcCompat="@drawable/coin" />
+
+            <TextView
+                android:id="@+id/textView_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_game_coin"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_game_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_start_button"
+        android:layout_marginTop="65dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:text="@string/text_game_start"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

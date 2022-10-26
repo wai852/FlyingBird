@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FlyingBird</string>
+
+    <string name="text_game_player">You</string>
+    <string name="text_game_e_1">Green</string>
+    <string name="text_game_e_2">Red</string>
+    <string name="text_game_e_3">Gray</string>
+    <string name="text_game_coin">10</string>
+    <string name="text_game_start">START</string>
+
+    <string name="text_game_msg">Tap To Play Game</string>
+    <string name="text_game_won">Congratulations, You won the game.</string>
+
+    <string name="text_res_msg">Congratulations!</string>
+    <string name="text_res_score">Your Score:</string>
+    <string name="text_res_highest_score">Highest Score:</string>
+    <string name="btn_res_play_again">Play again!</string>
+
+    <string name="btn_res_won">You Won The Game!</string>
+    <string name="btn_res_lost">Lost</string>
+
+    <string name="dialog_title">Flying Bird</string>
+    <string name="dialog_msg">Wanna to play again, before you quit the game?</string>
+    <string name="dialog_n_btn">Quit</string>
+    <string name="dialog_p_btn">Cancel</string>
+</resources>
